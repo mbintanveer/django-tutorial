@@ -53,7 +53,7 @@ EMAIL_SUBJECT_PREFIX = env(
 EMAIL_BACKEND = "djcelery_email.backends.CeleryEmailBackend"
 EMAIL_HOST = "smtp.mailgun.org"
 EMAIL_HOST_USER = "postmaster@mg.trainingwebdev.com"
-EMAIL_HOST_PASSWORD = env("SMTP_MAILGUN_PASSWORD")
+EMAIL_HOST_PASSWORD = env("SMTP_MAILGUN_PASSWORD", default="mailgun123")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DOMAIN = env("DOMAIN")
