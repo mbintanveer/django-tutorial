@@ -30,8 +30,8 @@ services:
             - es
         networks:
             - authors-api
-        # ports:
-        #     - "8000:8000"
+        ports:
+            - "8000:8000"
 
     postgres:
         build:
